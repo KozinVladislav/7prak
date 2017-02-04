@@ -1,0 +1,429 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box; 
+}
+
+html{
+font-family: sans-serif;
+}
+  A {
+  	text-decoration: none;
+    color: #a2a2a2; /* ÷вет ссылок */
+   }
+   A:visited {
+    color: #5e5e5e; /* ÷вет посещенных ссылок */
+   }
+   A:active {
+    color: #000000; /* ÷вет активных ссылок */
+   }
+#name {
+text-align: center;
+font-size: 45px;
+padding: 80px;
+}
+
+p {
+color: grey;
+}
+h3 {
+color: #222222;
+}
+header {
+background: url("image/4.jpg");
+height: 635px;
+width: auto;
+background-repeat:no-repeat;
+background-position: center center;
+background-size:cover;
+}
+
+header a{
+
+margin-left: auto;
+margin-right: auto;
+top:100px;
+}
+#icons a
+{
+display:inline-block;
+
+padding: 15px 20px 16px;
+
+border-radius:50%;
+
+text-align:center;
+
+vertical-align:middle;
+
+background:rgba(0, 0, 0, 0.51);
+
+transition:all .3s;
+ 
+}
+
+#icons a:hover
+{
+
+ background:rgba(0, 0, 0, 0.79);
+ 
+}
+#icons {
+	margin: 0 0 35px;
+    text-align: center;
+}
+.icons {
+ 
+    max-width: 71em;
+    margin: 0 auto;
+    padding: 0 1em 2.875em;
+    vertical-align: midle
+}
+.whyBox {text-align: center;}
+.whyBox h3 {padding: 10px; margin-top: 15px;}
+.whyBox p {}
+
+.icons-s {text-align: center;}
+.icons-s li {display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 20px 0 30px;
+    padding: 20px 30px 0;
+    border-right: 1px solid #ccc;}
+ 
+.icons-s li:not(:nth-child(n+4)):after{
+ 
+  display:block;
+  width:100%;
+  height:1px;
+  content:" ";
+  border-bottom:1px solid #ccc;
+position: relative;
+    top: 25px;}
+    .icons-s li:nth-child(3), .icons-s li:nth-child(6) {border-right:0;}
+	.icons-s li:nth-child(n+4){margin-top:20px!important}
+#iconsu{
+
+	text-align: center;
+}
+
+.point {
+color: red;
+font-size: 50px;
+font-family: 'Pacifico', arial;
+}
+header aside {
+align-content: center;
+}
+
+.picture_iphone {
+    position: absolute;
+    left: 0;
+    top: 385px;
+    width: 100%;
+    text-align: center;}
+
+.iphone {
+height:580px;
+background: #fff;
+
+}
+#left, #right1{
+		display: inline-block;
+		position: relative;
+		top: 130px;
+		text-align:left;
+	}
+#left p, #right1 p{line-height: 24px;}
+#left h3:not(:first-child), #right1 h3:not(:first-child){margin:15px 0 0}
+#left {
+	    left: -17%;
+
+}
+#right1 {
+    right: -17%;
+}
+.video {
+	    display: flex;
+background: #e8e8e8;
+height:330px;
+margin: 35px 0 0;
+}
+.video div:first-child, .video div:last-child{
+	
+	width:50%;
+	
+}
+.podval {
+	height: 80px;
+	background: #e8e8e8;
+	text-align: center;
+	padding: 35px;
+	text-color: #a2a2a2;
+}
+.prepodval {
+ height: 200px;
+ text-align: center;
+ padding: 55px;
+}
+
+.prepodval a
+{
+
+ display:inline-block;
+ width: 45px;
+    height: 45px;
+    line-height: 52px;
+ border-radius:50%;
+ text-align:center;
+ vertical-align:middle;
+ background:#ccc;
+ 
+ transition:all .3s;
+ 
+}
+
+.prepodval a:hover
+{
+
+ background:#e74c3c;
+ 
+}
+.prepodval h1 {
+padding: 5px;
+}
+.prepodval p {
+padding: 10px;
+}
+#email {
+	background: url("image/img.png") center 52% no-repeat;
+    background-size: cover;
+	height: 300px;
+	text-align: center;
+	padding: 100px;
+	margin-top: 10px;
+}
+#email h2 {position:relative;top:-30px}
+.textInput{
+    background-color:#281307; /* голубой фон */
+    color:#0007D3; /* синий цвет букв */
+    border:1px solid #281307; /* син€€ рамка в два пиксел€ */
+    padding:5px; /* внутренний отступ дл€ текста в 5 пикселей */
+    opacity: 0.6;
+    width: 300px;
+    height: 60px;
+    font-weight: 600;
+    color: #c5c2c1;
+    font-size: 16px;
+}
+a.knopka {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчЄркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #e74c3c; /* фон кнопки */
+  padding: 1.3em 1.4em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  font-weight: 600;
+  font-size: 16px;
+
+} 
+a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+
+.icons {
+	
+    max-width: 71em;
+    margin: 0 auto;
+    padding: 0 1em 2.875em;
+    vertical-align: midle
+}
+.whyBox {text-align: center;}
+.whyBox h3 {padding: 10px; margin-top: 15px;}
+.whyBox p {}
+
+.icons-s {text-align: center;    max-width: 85%;
+    margin: 0 auto;}
+.icons-s li {display: inline-block; vertical-align: top; width: 250px; margin: 40px 0 30px 0;}
+
+.goPrice a{color:#fff;text-decoration:none}
+
+.pricingBox {margin: 0 0 150px;background: #e8e8e8; height: 510px; text-align: center;}
+.price {display: inline-block; position: relative;
+top: 0;vertical-align: top; background:#fff; width: 300px; /*height: 300px;*/}
+.namePrice {color: #fff; background: #322e2e; padding: 1.3em 1.4em; font-weight: 600; font-size: 20px;} 
+.ftrPrice {font-size: 18px; padding: 5px; color: #c2c2c2;}
+.ftrPrice li {    border-bottom: 2px solid #ccc;list-style-type: none; padding: 5px;}
+.ftrPrice li:last-child {border-bottom:0}
+.ftrPrice li.salePrice {list-style-type: none; color: #000000;}
+.ftrPrice li.salePrice sup {}
+.btnPrice {    padding: 20px 0 0;min-height: 70px;background: #322e2e; margin-top:4px;}
+.goPrice {text-transform: uppercase;color: #fff; background: #514d4d; padding: 1.3em 1.4em; font-weight: 600; font-size: 16px; width: 100px;margin-left: 100px;  padding: 0.6em 0em;}
+.goPrice:hover {}
+.salePrice {font-size: 35px; font-weight: 600;}
+.pricName {
+ padding:30px;
+}
+.pricName h3{
+ font-size: 25px;
+}
+.pricName p{
+ font-size: 18px;
+ padding: 12px;
+}
+
+.price, .price .ftrPrice li, .price .namePrice, .price .btnPrice, .price:hover .goPrice{
+transition:all .3s;
+}
+.price:hover{
+top:-23px;
+}
+.price:hover .ftrPrice li {
+padding: 9px;
+}
+.price:hover .namePrice, .price:hover .btnPrice{background:#ec5937}
+.price:hover .goPrice{background:#ef856d}
+
+.vidos{
+	    margin: 0 0 0 50px;
+}
+
+
+
+.proname {
+	height: 550px;
+    text-align: center;
+}
+.strelka {
+	margin: 0px 30px;
+}
+.strelka img{
+	margin-top: 10px;
+	float: left;
+	
+}
+.strelka p{ margin-left: 30px;
+margin-top: 10px; font-size: 17px;}
+.textvideo {
+	max-width: 530px;
+    margin: 40px 100px 40px auto;
+}
+.textvideo h3{padding:10px;}
+.textvideo p{
+	padding: 5px;
+
+}
+
+.slider {
+	text-align: center;
+	height: 240px;
+	margin-top: 130px;
+}
+.slider p {
+	font-style: oblique;
+	font-size: 22px;
+	
+
+
+}
+.slider h5 {
+	font-size: 19px;
+	margin-top: 25px;
+}
+.slider img {
+	margin-top: 50px;
+}
+
+.podval a:not(:first-child) {
+	
+	display:inline-block;
+	margin:0 0 0 40px;
+	
+}
+
+
+@media ( max-width:1280px )
+{
+	
+	.proname{height: 850px;}
+	#left, #right1{margin:37% 0 0 ;}
+	#right1{right: -2%;}
+	#left{left: -2%;}
+	
+	.video{display: block;padding:1px 0 40px;height:auto;text-align:center}
+	.video div:first-child, .video div:last-child{width:100%}
+	.textvideo{margin: 40px auto 40px auto;text-align:left;max-width: 425px;}
+	.vidos{margin:0;}
+	
+	.pricingBox {height:auto;padding-bottom: 40px;}
+	.listPrice{    max-width: 625px;    margin: 0 auto;}
+	.listPrice:after{content:"";display:table;height:0;clear:both;}
+	.price{float:left;margin:0 0 50px;}
+	.price:nth-child(2n){float:right}
+	.price:hover{top:-23px;}
+	.price:hover .ftrPrice li {padding: 5px;}
+	
+	.picture_iphone img {max-width:100%;height:auto;}
+	
+	.icons-s li {border-right:1px solid #ccc!important;}
+	.icons-s li{margin-top:20px!important}
+	.icons-s li:nth-child(4):after {display: block;
+    width: 100%;
+    height: 1px;
+    content: " ";
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    top: 25px;}
+	.icons-s li:nth-child(2n){border-right:0!important;}
+	
+}
+
+@media ( max-width:700px )
+{
+	
+	#left, #right1 {margin:20% 0 0}
+	.proname{height: 500px;}
+	.price{display:block!important;float:none!important}
+	.listPrice{    display: inline-block;}
+	
+}
+
+@media ( max-width:645px )
+{
+	
+	.icons-s li{border-right:0!important;}
+	.icons-s li:after{border-bottom:0!important}
+	.icons-s li{border-bottom:1px solid #ccc}
+	.knopka{    display: block;
+    max-width: 300px;
+    margin: 0 auto;}
+	.textInput{max-width:300px;width:100%;}
+	body{overflow-x:hidden}
+	.prepodval, .podval{height:auto}
+	.podval a {
+		
+		margin-bottom:15px!important;
+		
+	}
+	
+	.slider{margin-top: 30px;margin-bottom:30px;height:auto}
+	#email, .pricingBox{margin:0}
+	
+}
+
+@media ( max-width:470px )
+{
+	
+	.knopka, .textInput{max-width:100%;width:100%;}
+	
+}
+
+@media ( max-width:600px )
+{
+	
+	.proname{height: 850px;}
+	#left, #right1{top:0;left:0;right:0;}
+	#left{top: 70px;}
+	.vidos{width:100%;height:auto}
+	
+}

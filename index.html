@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Практическая работа 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<script>
+
+	function color()
+	{
+	
+		let c = Math.round( 255.0 * Math.random() );
+	
+		return 'rgb(' + c + ', ' + c + ', ' + c + ');';
+	
+	}
+
+	document.addEventListener('DOMContentLoaded', function(){
+	
+		let videos = document.getElementsByClassName('vidos'),
+			links = document.getElementsByClassName('strelka'),
+			blocks = document.getElementsByClassName('icons-s');
+
+		links[0].onclick = function(e)
+		{
+
+			videos[0].pause();
+		
+			let target = e.target.parentElement.id;
+
+			if ( target == 'set_prev_video' )
+				videos[0].setAttribute('src', '111.mp4');
+			else if ( target == 'set_next_video' )
+				videos[0].setAttribute('src', '222.mp4');
+			
+			videos[0].play();
+			
+		}
+		
+		blocks[0].onclick = function(e)
+		{
+		
+			let tagname = '';
+			
+			if ( e.target.tagName != 'LI' )
+				e.target.parentElement.setAttribute('style', 'width:100%;display:block')
+			else
+				e.target.setAttribute('style', 'width:100%;display:block');
+				
+			blocks[0].className = 'icons-s icons-s-new';
+			
+		}
+	
+	});
+
+</script>
+<style>.icons-s-new li{display:none;border:0!important}.icons-s-new li:after{border:0!important}</style>
+</head>
+<body>
+<header>
+<h1 id="name">Glom<span class="point">.</span></h1>
+<div id="icons"><a href=""><img src="image/apple.png"></a>
+<a href=""><img src="image/android.png"></a>
+<a href=""><img src="image/windows.png"></a><br></div>
+<div id="iconsu"><img src="image/arrow.png"></div>
+</header>
+<section>
+<div class="picture_iphone"><img src="image/features.png"></section></div>
+<section class="proname">
+<div id="left"><h3>First Great Feature</h3><br>
+<p>Lorem ipsum dolor sit arnet, consectetur<br>adipiscing elit. Mauris interdum velit vitae<br> nulla molesite eu.</p><br>
+<h3>First Great Feature</h3><br>
+<p>Lorem ipsum dolor sit arnet, consectetur<br>adipiscing elit. Mauris interdum velit vitae<br> nulla molesite eu.</p><br></div>
+<div id="right1"><h3>First Great Feature</h3><br>
+<p>Lorem ipsum dolor sit arnet, consectetur<br>adipiscing elit. Mauris interdum velit vitae<br> nulla molesite eu.</p><br>
+<h3>First Great Feature</h3><br>
+<p>Lorem ipsum dolor sit arnet, consectetur<br>adipiscing elit. Mauris interdum velit vitae<br> nulla molesite eu.</p><br></div>
+</section>
+<section class="video">
+<div>
+<div class="textvideo">
+<h3>Whats Glow all About</h3>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+<div class="strelka">
+<span id='set_prev_video'><img src="image/icons.png"><p>Lorem ipsum dolor</p></span>
+<span id='set_next_video'><img src="image/icons.png"><p>Lorem ipsum dolor</p></span>
+</div></div>
+</div>
+<div>
+<video class="vidos" src="111.mp4" width="420" height="300" poster="image/4.jpg" controls></video>
+</div>
+</section>
+<section class="icons">
+<div class="whyBox">
+ <h3>Why is Glow so Awedome</h3>
+ <p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.<br>ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu</p>
+</div>
+
+<ul class="icons-s">
+<li>
+<img src="image/icon1.png">
+<h5>Flat Design</h5>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+</li>
+<li>
+<img src="image/icon2.png">
+<h5>Flat Design</h5>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+</li>
+<li>
+<img src="image/icon3.png">
+<h5>Flat Design</h5>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+</li>
+<li>
+<img src="image/icon4.png">
+<h5>Flat Design</h5>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+</li>
+<li>
+<img src="image/icon5.png">
+<h5>Flat Design</h5>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+</li>
+<li>
+<img src="image/icon6.png">
+<h5>Flat Design</h5>
+<p>Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molesite eu.</p>
+</li>
+</ul>
+</section>
+
+
+<section class="pricingBox">
+ <div class="pricName">
+  <h3>titile</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit ullam consequatur quo ducimus<br> voluptates, dicta pariatur dolores quas odio nostrum optio repudiandae nulla, officiis non! Fugiat voluptates alias ab.</p>
+ </div>
+
+ <div class="listPrice">
+  <div class="price">
+   <div class="namePrice">
+    Basic
+   </div>
+   <ul class="ftrPrice">
+    <li class="salePrice">$19<sup>99</sup></li>
+    <li>feature 1 </li>
+    <li>feature 2</li>
+    <li>feature 3</li>
+    <li>feature 4</li>
+    <li>feature 5</li>
+   </ul>
+   <div class="btnPrice">
+    <div class="goPrice">
+     <a href="#">purchase</a>
+    </div>
+   </div>
+  </div>
+
+  <div class="price">
+   <div class="namePrice">
+    Basic
+   </div>
+   <ul class="ftrPrice">
+    <li class="salePrice">$19<sup>99</sup></li>
+    <li>feature 1</li>
+    <li>feature 2</li>
+    <li>feature 3</li>
+    <li>feature 4</li>
+    <li>feature 5</li>
+   </ul>
+   <div class="btnPrice">
+    <div class="goPrice">
+     <a href="#">purchase</a>
+    </div>
+   </div>
+  </div>
+
+   <div class="price">
+   <div class="namePrice">
+    Basic
+   </div>
+   <ul class="ftrPrice">
+    <li class="salePrice">$19<sup>99</sup></li>
+    <li>feature 1</li>
+    <li>feature 2</li>
+    <li>feature 3</li>
+    <li>feature 4</li>
+    <li>feature 5</li>
+   </ul>
+   <div class="btnPrice">
+    <div class="goPrice">
+     <a href="#">purchase</a>
+    </div>
+   </div>
+  </div>
+
+  <div class="price">
+   <div class="namePrice">
+    Basic
+   </div>
+   <ul class="ftrPrice">
+    <li class="salePrice">$19<sup>99</sup></li>
+    <li>feature 1</li>
+    <li>feature 2</li>
+    <li>feature 3</li>
+    <li>feature 4</li>
+    <li>feature 5</li>
+   </ul>
+   <div class="btnPrice">
+    <div class="goPrice ">
+     <a href="#">purchase</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="slider">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit ullam<br> consequatur quo ducimus voluptates, dicta pariatur dolores quas odio nostrum optio repudiandae nulla, officiis non! Fugiat voluptates alias ab.</p>
+	<h5>Prosto</h5>
+	<img src="image/slider.png">
+</section>
+<section id="email">
+<h2>Subcrite to Email Newsletter</h2>
+<input type="email" class="textInput" placeholder="ENTER EMAIL ADRESS.." name="email">
+<a href='#' class="knopka">Subscrite</a>
+</section>
+<section class="prepodval">
+<h1>Say Hi Get in Touch</h2>
+<p>prosto text text text text</p>
+<a href=""><img src="image/twitter.png"></a>
+<a href=""><img src="image/facebook.png"></a>
+<a href=""><img src="image/pa.png"></a>
+<a href=""><img src="image/google +.png"></a>
+<a href=""><img src="image/linkedin.png"></a>
+<a href=""><img src="image/youtube.png"></a>
+
+
+</section>
+<footer class="podval">
+<a href="#">Contact</a>
+<a href="#">Contact</a>
+<a href="#">Contact</a>
+<a href="#">Contact</a>
+<a href="#">Contact</a>
+<a href="#">Contact</a>
+</footer>
+</body>
+</html>
