@@ -41,13 +41,11 @@
 		
 		blocks[0].onclick = function(e)
 		{
-		
-			let tagname = '';
-			
+
 			if ( e.target.tagName != 'LI' )
-				e.target.parentElement.setAttribute('style', 'width:100%;display:block')
+				e.target.parentElement.setAttribute('style', 'font-size:25px;width:100%;display:block;background:' + color());
 			else
-				e.target.setAttribute('style', 'width:100%;display:block');
+				e.target.setAttribute('style', 'font-size:25px;width:100%;display:block;background:' + color());
 				
 			blocks[0].className = 'icons-s icons-s-new';
 			
@@ -56,7 +54,7 @@
 	});
 
 </script>
-<style>.icons-s-new li{display:none;border:0!important}.icons-s-new li:after{border:0!important}</style>
+<style>.icons-s-new li{display:none;border:0!important}.icons-s-new li img{width:100px;height:100px;}.icons-s-new li:after{border:0!important}</style>
 </head>
 <body>
 <header>
